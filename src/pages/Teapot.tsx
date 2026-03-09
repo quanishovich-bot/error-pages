@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
 import { Coffee, Home } from 'lucide-react';
 import AtmosphericBackground from '../components/AtmosphericBackground';
 
@@ -36,13 +35,13 @@ export default function Teapot() {
           This server refuses to brew coffee because it is, permanently, a teapot.
         </p>
 
-        <Link 
-          to="/" 
+        <a 
+          href="https://adixxlee.ru" 
           className="inline-flex items-center gap-2 px-8 py-4 bg-emerald-500 text-white rounded-full font-medium hover:scale-105 transition-transform mt-8"
         >
           <Home size={20} />
-          Return to Base
-        </Link>
+          Return to Home
+        </a>
       </motion.div>
     </AtmosphericBackground>
   );

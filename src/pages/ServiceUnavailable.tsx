@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
 import { AlertTriangle, Home } from 'lucide-react';
 import AtmosphericBackground from '../components/AtmosphericBackground';
 
@@ -36,13 +35,13 @@ export default function ServiceUnavailable() {
           The void is currently undergoing structural repairs. Please check back later.
         </p>
 
-        <Link 
-          to="/" 
+        <a 
+          href="https://adixxlee.ru" 
           className="inline-flex items-center gap-2 px-8 py-4 bg-yellow-500 text-black rounded-full font-medium hover:scale-105 transition-transform mt-8"
         >
           <Home size={20} />
-          Return to Base
-        </Link>
+          Return to Home
+        </a>
       </motion.div>
     </AtmosphericBackground>
   );

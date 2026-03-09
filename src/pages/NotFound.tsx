@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
 import { Ghost, Home } from 'lucide-react';
 import AtmosphericBackground from '../components/AtmosphericBackground';
 
@@ -41,13 +40,13 @@ export default function NotFound() {
           The page you are looking for has vanished into the dark matter of the internet.
         </p>
 
-        <Link 
-          to="/" 
+        <a 
+          href="https://adixxlee.ru" 
           className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full font-medium hover:scale-105 transition-transform mt-8"
         >
           <Home size={20} />
-          Return to Base
-        </Link>
+          Return to Home
+        </a>
       </motion.div>
     </AtmosphericBackground>
   );
